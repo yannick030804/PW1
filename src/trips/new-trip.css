@@ -1,0 +1,126 @@
+html, body {
+    margin: 0;
+    background-color: rgb(243, 243, 243);
+    font-family: sans-serif;
+}
+
+.topbar {
+    height: 60px;
+    background: #ba1e1e;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 14px 40px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+}
+
+.brand img {
+    height: 40px;
+}
+
+.brand h1 {
+    font-size: 26px;
+    margin: 0;
+    font-weight: 700;
+}
+
+.menu {
+    display: flex;
+    gap: 30px;
+    margin-left: auto;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    position: relative;
+}
+
+.menu a:hover {
+    opacity: 0.85;
+}
+
+.menu a.active::after {
+    content: "";
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: white;
+}
+
+#create-trip {
+    padding: 40px;
+}
+
+#create-trip h2 {
+    margin-bottom: 20px;
+}
+
+.trip-bar {
+    display: flex;
+    background: white;
+    border-radius: 16px;
+    max-width: 970px;
+    padding: 12px;
+    gap: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    min-width: 160px;
+    padding: 10px 14px;
+    background: rgba(186, 30, 30, 0.10); /* 👈 tu rojo */
+    border-radius: 12px;
+}
+
+.field label {
+    font-size: 12px;
+    color: #555;
+    margin-bottom: 4px;
+}
+
+.field input {
+    border: none;
+    background: transparent;
+    font-size: 16px;
+    outline: none;
+}
+
+input::selection {
+    background: rgba(186, 30, 30, 0.25); /* tu rojo */
+    color: black;
+}
+
+.separator {
+    width: 1px;
+    height: 50px;
+    background: rgba(0,0,0,0.1);
+}
+
+.search-btn {
+    height: 56px;
+    padding: 0 24px;
+    border: none;
+    border-radius: 12px;
+    background: #ba1e1e;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.search-btn:hover {
+    opacity: 0.9;
+}
